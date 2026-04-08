@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{ page.title }}</title>
+
+        <!-- Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/assets/style.css" />
+
+        <!-- MathJax -->
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["$", "$"],
+                        ["\\(", "\\)"],
+                    ],
+                    displayMath: [["$$", "$$"]],
+                },
+            };
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+            async
+        ></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1><a href="/">Yadu ML</a></h1>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                </nav>
+            </header>
+
+            <main>{{ content }}</main>
+        </div>
+    </body>
+</html>
