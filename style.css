@@ -1,57 +1,88 @@
 body {
     font-family:
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #fdf6e3;
-    color: #1a1a1a;
+    background: #fbfbfa;
+    color: #2f3437;
     margin: 0;
 }
 
+/* layout */
 .container {
-    max-width: 720px;
+    max-width: 680px;
     margin: 80px auto;
     padding: 0 20px;
 }
 
+/* headings */
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.2em;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.3em;
 }
 
+h2 {
+    font-size: 1.4rem;
+    margin-top: 2.5em;
+}
+
+/* text */
 p {
-    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #37352f;
 }
 
+/* divider */
 hr {
-    margin: 40px 0;
+    margin: 30px 0;
     border: none;
-    border-top: 1px solid #e6dcc6;
+    border-top: 1px solid #e9e9e7;
 }
 
+/* notes list */
 .notes {
     margin-top: 20px;
 }
 
+/* notion-style block */
 .note-card {
-    background: #fffaf0;
-    padding: 14px 18px;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    transition: all 0.2s ease;
-    border: 1px solid #eee2c9;
+    padding: 12px 14px;
+    border-radius: 8px;
+    transition: background 0.15s ease;
 }
 
+/* hover effect like Notion */
 .note-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background: #f1f1ef;
 }
 
+/* links */
 a {
     text-decoration: none;
-    color: #222;
-    font-weight: 500;
+    color: inherit;
 }
 
+/* subtle metadata */
+.meta {
+    font-size: 0.85rem;
+    color: #9b9a97;
+    margin-top: 4px;
+}
+
+/* back link */
 .back {
     font-size: 0.9rem;
-    color: #666;
+    color: #9b9a97;
+}
+
+/* block style (for posts) */
+.block {
+    margin: 14px 0;
+}
+
+/* highlight block */
+.highlight {
+    background: #f7f6f3;
+    padding: 10px 12px;
+    border-radius: 6px;
 }

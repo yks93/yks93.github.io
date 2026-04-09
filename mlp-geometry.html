@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Geometry of MLPs</title>
-        <link rel="stylesheet" href="./style.css?v=2" />
+        <link rel="stylesheet" href="./style.css?v=3" />
     </head>
     <body>
         <div class="container">
@@ -11,15 +11,24 @@
 
             <h1>Geometry of MLPs</h1>
 
-            <p>
-                A multilayer perceptron without non-linearity collapses into a
-                single affine transformation.
-            </p>
+            <div class="meta">Machine Learning • Geometry</div>
 
-            <p>
-                This implies no increase in expressive power beyond linear
-                regression.
-            </p>
+            <div class="block">
+                <p>
+                    A multilayer perceptron without non-linearity collapses into
+                    a single affine transformation.
+                </p>
+            </div>
+
+            <div class="block highlight">
+                This means depth alone does not increase expressive power
+                without non-linearity.
+            </div>
+
+            <div class="block">
+                <p>Composition of affine maps:</p>
+                <p>f(x) = W₂(W₁x + b₁) + b₂ = Wx + b</p>
+            </div>
         </div>
     </body>
 </html>
