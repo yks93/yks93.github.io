@@ -1,14 +1,40 @@
 <!doctype html>
+
 <html>
     <head>
         <meta charset="UTF-8" />
         <title>Geometry of MLPs</title>
+
         <link rel="stylesheet" href="./style.css?v=3" />
+
+        <!-- KaTeX CSS -->
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        />
+
+        <!-- KaTeX JS -->
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+        ></script>
+
+        <!-- Auto-render -->
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body)"
+        ></script>
     </head>
+
     <body>
         <div class="container">
             <a href="./index.html" class="back">← back</a>
 
+            ```
             <h1>Geometry of MLPs</h1>
 
             <div class="meta">Machine Learning • Geometry</div>
@@ -27,8 +53,10 @@
 
             <div class="block">
                 <p>Composition of affine maps:</p>
-                <p>f(x) = W₂(W₁x + b₁) + b₂ = Wx + b</p>
+
+                <p>$$ f(x) = W_2(W_1 x + b_1) + b_2 = Wx + b $$</p>
             </div>
+            ```
         </div>
     </body>
 </html>
